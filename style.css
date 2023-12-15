@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* ### Primary */
+    --lght-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    /* ### Neutral */
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--dark-blue);
+    padding: auto 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--dark-grayish-blue);
+    position: relative;
+}
+.card .title{
+    margin-bottom: 1rem;
+    color: var(--neon-green);
+    letter-spacing: 2px;
+}
+.card .advice-p{
+    color: var(--lght-cyan);
+    font-size: 28px;
+}
+.card .divider{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.card .btn-dics{
+    position: absolute;
+    bottom: -30px;
+}
+
+.card .btn-dics .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: none ;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.card .btn-dics .btn:hover{
+    background-color: hsl(150, 81%, 75%);
+
+    box-shadow: -1px 1px 88px 12px rgba(82, 255, 168, 1);
+    -webkit-box-shadow: -1px 1px 88px 12px rgba(82, 255, 168, 1);
+    -moz-box-shadow: -1px 1px 88px 12px rgba(82, 255, 168, 1);
+    transition: all ease-in-out 0.3s;
+}
+/* .card .btn-dics .btn img{
+    width: 100%;
+} */
+
+@media screen and (min-width: 768px) {
+    .card {
+      width: 550px;
+      /* display:block; */
+    }
+  }
